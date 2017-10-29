@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./1.css">
+</head>
+
+<body>
+    <div>
+        <h1>flex 基本概念</h1>
+    </div>
+    <div class="change">
+        <div class="need father">
+            <h2>父容器</h2>
+            <h4>使用 flex 布局首先要设置父容器 display: flex，</h4>
+            <form>
+                <h4>主轴：justify-content:</h4>
+                <input type="radio" name="justify-content" value="flex-start">flex-start（默认值）
+                <input type="radio" name="justify-content" value="flex-end">flex-end
+                <input type="radio" name="justify-content" value="center">center
+                <input type="radio" name="justify-content" value="space-between">space-between
+                <input type="radio" name="justify-content" value="space-around">space-around
+                <h4>交叉轴：align-items: 需要子元素有宽高</h4>
+                <input type="radio" name="align-items" value="flex-start">flex-start（默认值）
+                <input type="radio" name="align-items" value="flex-end">flex-end
+                <input type="radio" name="align-items" value="center">center
+                <input type="radio" name="align-items" value="baseline">baseline
+                <input type="radio" name="align-items" value="stretch">stretch
+                <h4>设置换行方式：flex-wrap: </h4>
+                <input type="radio" name="flex-wrap" value="wrap">wrap
+                <input type="radio" name="flex-wrap" value="nowrap">nowrap（默认值）
+                <input type="radio" name="flex-wrap" value="wrap-reverse">wrap-reverse
+                <h4>多行沿交叉轴对齐：align-content: 当子容器多行排列时，设置行与行之间的对齐方式。</h4>
+                <input type="radio" name="align-content" value="flex-start">flex-start
+                <input type="radio" name="align-content" value="flex-end">flex-end
+                <input type="radio" name="align-content" value="center">center
+                <input type="radio" name="align-content" value="space-around">space-around
+                <input type="radio" name="align-content" value="space-between">space-between
+                <input type="radio" name="align-content" value="stretch">stretch（默认值）
+            </form>
+        </div>
+        <div class="need son">
+            <h2>子容器</h2>
+            <h4>使用 flex 布局首先要设置父容器 display: flex</h4>
+            <form>
+                <h4>主轴：flex: 有flex不会换行,优先级高于width</h4>
+                <input type="radio" name="flex" value="flex-grow">flex-grow
+                <input type="radio" name="flex" value="flex-shrink">flex-shrink
+                <input type="radio" name="flex" value="flex-basis">flex-basis
+                <h4>交叉轴：align-self: 能覆盖父容器的align-items</h4>
+                <input type="radio" name="align-self" value="flex-start">flex-start
+                <input type="radio" name="align-self" value="flex-end">flex-end
+                <input type="radio" name="align-self" value="center">center
+                <input type="radio" name="align-self" value="baseline">baseline
+                <input type="radio" name="align-self" value="stretch">stretch(默认值)
+            </form>
+        </div>
+    </div>
+    <div class="f f1">
+        <div class="box left">左边</div>
+        <div class="box left">左边</div>
+        <div class="box left">左边</div>
+        <div class="box left">左边</div>
+        <div class="box left">左边</div>
+        <div class="box mid">中间</div>
+        <div class="box mid">中间</div>
+        <div class="box mid">中间</div>
+        <div class="box mid">中间</div>
+        <div class="box mid">中间</div>
+        <div class="box right">右边</div>
+    </div>
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./flex.js"></script>
+</body>
+
+</html>
